@@ -47,9 +47,8 @@ const CornerMeta = styled.div`
   position: absolute;
   top: clamp(20px, 4vw, 40px);
   left: clamp(20px, 4vw, 40px);
-  right: clamp(20px, 4vw, 40px);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   z-index: 3;
   font-size: 10px;
@@ -201,7 +200,6 @@ export const IntroOverlay = () => {
         >
           <CornerMeta aria-hidden>
             <span>u1 studio</span>
-            <span>Prague</span>
           </CornerMeta>
           <Frame>
             <Eyebrow initial={{ opacity: 0, y: 12 }} animate={contentIn(0)}>
